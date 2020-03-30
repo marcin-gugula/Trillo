@@ -24,7 +24,7 @@
             background-size: cover;
 
             //Newer browsers - masks
-            @supports(-webkit-mask-image:url() or mask-image:url() and){
+            @supports(-webkit-mask-image:url()) or (mask-image:url()){
 
                 background-image: none;
 
