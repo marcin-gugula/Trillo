@@ -9,4 +9,8 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;  // default 1rem = 10px
+
+    @include respond(bp-large){
+        font-size: 50%;
+    }
 }

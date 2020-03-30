@@ -13,8 +13,18 @@ body{
     box-shadow: var(--shadow-dark);
 
     min-height: 50rem;
+
+    @include respond(bp-larger){
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .content{
     display: flex;
+
+    @include respond(bp-medium){
+    flex-direction: column;
+    }
 }

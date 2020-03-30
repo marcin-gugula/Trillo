@@ -1,0 +1,43 @@
+// MEDIA QUERY
+/* 
+0--450       smaller
+450--500       smaller
+500-600px:      small
+600-900px:      medium
+900-1100px:     large
+1100-1200px:    larger
+
+
+1em = 16px
+
+$breakpoint argument choices:
+- bp-smallest
+- bp-smaller
+- bp-small
+- bp-medium
+- bp-large
+- bp-larger
+*/
+
+@mixin respond($breakpoint){
+
+    @if $breakpoint == bp-smallest {
+        @media only screen and (max-width: 28.125em) {@content};       //450px
+    }
+    @if $breakpoint == bp-smaller {
+        @media only screen and (max-width: 31.25em) {@content};       //500px
+    }
+    @if $breakpoint == bp-small {
+        @media only screen and (max-width: 37.5em) {@content};       //600
+    }
+    @if $breakpoint == bp-medium {
+        @media only screen and (max-width: 56.25em) {@content};       //900px
+    }
+    @if $breakpoint == bp-large {
+        @media only screen and (max-width: 68.75em) {@content};      //1100px
+    }
+    @if $breakpoint == bp-larger {
+        @media only screen and (max-width: 75em) {@content};      //1200px
+    }
+    
+}

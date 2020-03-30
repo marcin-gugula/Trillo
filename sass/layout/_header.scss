@@ -7,6 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(bp-smaller) {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+    }
 }
 
 //  LOGO

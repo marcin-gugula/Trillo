@@ -9,6 +9,13 @@
     padding: 4.5rem;
     background-color: var(--color-grey-light-1);
     border-bottom: var(--line);
+
+    @include respond(bp-medium) {
+        padding: 3rem;
+    }
+    @include respond(bp-small) {
+        flex-direction: column;
+    }
 }
 
 .description{
@@ -18,6 +25,15 @@
     
     background-color: var(--color-white);
     box-shadow: var(--shadow-light);
+
+    @include respond(bp-medium) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
+    @include respond(bp-small) {
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+    }
 }
 
 .user-reviews{
@@ -31,4 +47,8 @@
 .cta{
     padding: 3.5rem 0;
     text-align: center;
+
+    @include respond(bp-medium) {
+        padding: 2.5rem 0;
+    }
 }
