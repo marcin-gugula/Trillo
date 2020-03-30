@@ -1,5 +1,18 @@
 .sidebar{
     background-color: var(--color-grey-dark-1);
     flex: 0 0 18%; //grow shrink width
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
+}
+
+// FOOTER
+
+.legal{
+    font-size: 1.2rem;
+    color: var(--color-grey-light-4);
+    text-align: center;
+    padding: 2.5rem
 }
