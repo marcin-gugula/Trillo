@@ -16,9 +16,11 @@ Web page for fictional booking agency: Trillo. Only hotel example is avaible.
  
 ## Screenshots
 Desktop:
+
 ![Landing page screenshot](https://github.com/marcin-gugula/Trillo/blob/master/img/Trillo_desktop.png)
 
 Mobile:
+
 ![Landing page screenshot](https://github.com/marcin-gugula/Trillo/blob/master/img/Trillo_mobile.png)
 
 
